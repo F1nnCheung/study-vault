@@ -19,8 +19,8 @@ updated: 2026-10-26
 
 ## 依据
 
-1. 从 [[sources/xxx]]：_具体哪句话支撑哪一步推理_
-2. 从 [[concepts/yyy]]：
+1. 从 [[pages/sources/xxx]]：_具体哪句话支撑哪一步推理_
+2. 从 [[pages/concepts/yyy]]：
 3. 
 
 ## 推理链
@@ -33,5 +33,5 @@ _什么情况下这个结论会不成立。_
 
 ## 依据页面
 
-- [[sources/xxx]]
-- [[concepts/yyy]]
+- [[pages/sources/xxx]]
+- [[pages/concepts/yyy]]

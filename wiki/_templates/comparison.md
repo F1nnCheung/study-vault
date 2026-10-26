@@ -41,4 +41,4 @@ _如果两者能组合，怎么分界。_
 
 ## 来源
 
-- [[sources/xxx]]
+- [[pages/sources/xxx]]

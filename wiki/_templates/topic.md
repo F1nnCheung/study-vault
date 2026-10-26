@@ -19,13 +19,13 @@ updated: 2026-10-26
 
 _把领域拆成 3–6 个可独立成页的部分，每部分链到对应页面。_
 
-1. [[concepts/xxx]] — 
-2. [[concepts/yyy]] — 
+1. [[pages/concepts/xxx]] — 
+2. [[pages/concepts/yyy]] — 
 3. 
 
 ## 关键实体
 
-- [[entities/xxx]]
+- [[pages/entities/xxx]]
 - 
 
 ## 争议与开放问题
@@ -41,4 +41,4 @@ _知道该有但还没建页的条目。这就是下次找来源的清单。_
 
 ## 来源
 
-- [[sources/xxx]]
+- [[pages/sources/xxx]]

@@ -19,7 +19,7 @@ _（空。摄入 3–5 个来源后开始成文。）_
 
 ## 知识地图
 
-_（空。列出已成型的主干，用 wikilink 串起来：`[[topics/xxx]] → [[concepts/yyy]]`。）_
+_（空。列出已成型的主干，用 wikilink 串起来：`[[pages/topics/xxx]] → [[pages/concepts/yyy]]`。）_
 
 ## 主要分歧
 

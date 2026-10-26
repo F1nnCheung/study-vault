@@ -33,9 +33,9 @@ _为什么这个实体值得在本库存一页。_
 
 ## 相关
 
-- [[concepts/xxx]]
-- [[entities/yyy]]
+- [[pages/concepts/xxx]]
+- [[pages/entities/yyy]]
 
 ## 来源
 
-- [[sources/xxx]]
+- [[pages/sources/xxx]]
