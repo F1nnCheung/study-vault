@@ -49,3 +49,38 @@
 **同步修改**：`README.md` 目录树与三层架构表、工作流示例路径、约定速查表；`index.md` 六个分区标注所属目录；`_templates/` 五份模板与 `overview.md` 的占位链接加 `pages/` 前缀；`meta/lint.md` 检查项增至 12 条。
 
 **未改**：`raw/` 结构（仍含 `inbox/` 与 `transcripts/`）、`meta/`、日志历史条目。
+
+---
+
+## [2026-10-26] refactor | 补收件积压检查与跨库仲裁
+
+- Lint 新增「收件积压」检查项（`raw/inbox/` 超过 14 天未处理），`meta/lint.md` 检查表 12 → 13 条。
+- 新增 `AGENTS.md` §10「跨库仲裁」：10.1 三类仲裁原则（必须一致／允许分叉／必须登记）／10.2 分叉点映射表（status 五档、页面类型、链接写法、建页阈值）／10.3 搬去 Work 的七项检查清单／10.4 两库结论冲突时的并列记录。
+- §10.2 的表格与 Work Vault §10.2 逐字一致，靠手工 diff 维持，**不做共享层**；单边修改视为违规。
+- 头部加「本文件只对 Study Vault 有效」提示，避免 Agent 在两个库之间串用规则。
+
+---
+
+## [2026-10-26] refactor | 与 Work 统一目录结构与书写约定
+
+**前提修正**：两库互不隶属、无内容交换需求，不做跨库仲裁。唯一要对齐的是**使用习惯**——同一个概念定义类文件，在两库必须落在同一个目录，写 frontmatter 与链接的方式必须一样。
+
+**删除**：`AGENTS.md` §10「跨库仲裁」整节（10.1 三类原则 / 10.2 分叉映射表 / 10.3 搬运清单 / 10.4 冲突处置）与头部跨库提示。映射表的前提是两库要交换内容，该前提不成立。
+
+**对齐项**（与 Work 完全一致）：
+
+| 项 | 改动 |
+|---|---|
+| raw 子目录 | 补 `reports/`，八个子目录同序：inbox / articles / papers / reports / books / notes / transcripts / assets |
+| 第六类 | `pages/answers/` → `pages/syntheses/`；页面类型 `answer` → `synthesis`（`git mv`，`_templates/answer.md` → `synthesis.md`） |
+| 模板 | `_templates/` 六份，与 Work 用同一套文件 |
+| status | `draft\|stable\|stale\|disputed` → `draft\|active\|stale\|contested` |
+| 链接 | 短链优先（本库不变，Work 改为与本库一致） |
+| 建页阈值 | 2 入 2 出 + 400 行 → 至少 1 入链（建议 2 入 2 出）+ 300–800 字 |
+| frontmatter | 字段表统一；`active` 语义为「当前成立」，可引用性交由 `confidence` 表达 |
+| 章节骨架 | 1 三层架构 / 2 目录 / 3 页面类型 / 4 命名与链接 / 5 Frontmatter / 6 工作流 / 7 严谨性 / 8 写作要求 / 9 索引与日志 / 10 边界，与 Work 同序号同标题 |
+| 三个导航文件 | index / overview / lint 的区块结构与 Work 一致 |
+
+**保留（本库特有）**：探索型定位、准入五类排除项的具体措辞、`sources` 页的「与已有知识的关系」结构、Lint 的「缺口」项。
+
+**新增**：Lint 检查项补「概览不同步」「证据空洞」，与 Work 同为 14 项；`overview.md` 增加准入/时效/分歧三条页头规矩。
