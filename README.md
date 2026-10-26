@@ -13,7 +13,6 @@
 ```
 Study Vault/
 ├── README.md              本文件
-├── llm-wiki.md            方法论原文（只读参考）
 └── wiki/                  知识库本体
     ├── AGENTS.md          schema：目录含义 / 页面格式 / 工作流，Agent 开工前必读
     ├── index.md           内容目录，按类型分区，每次摄入后更新
@@ -33,7 +32,8 @@ Study Vault/
     ├── topics/            主题枢纽页：领域入口
     ├── comparisons/       对比页：选型、权衡、时间线
     ├── answers/           查询结论回填
-    └── _templates/        6 份页面模板
+    ├── _templates/        6 份页面模板
+    └── meta/              方法论与规范原文（只读参考，不参与 wiki 正文）
 ```
 
 ---

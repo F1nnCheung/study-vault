@@ -44,8 +44,11 @@ wiki/
 ├── topics/            主题枢纽页：一个领域的总览与入口
 ├── comparisons/       对比页：A vs B、方案选型、时间线比较
 ├── answers/           查询产物回填：分析、连接、结论
-└── _templates/        页面模板，复制后填写
+├── _templates/        页面模板，复制后填写
+└── meta/              方法论与规范原文（如 llm-wiki.md）。只读参考，不产生页面、不进 index.md
 ```
+
+`meta/` 不参与三层架构，也不是页面类型：它存放「本库为什么这么设计」的原始依据。改 schema 前先回读这里的文档。正文引用写作 `[[meta/llm-wiki|LLM Wiki 方法论]]`。
 
 ---
 
